@@ -1,0 +1,19 @@
+@import 'variables';
+// Small buttons gradient
+
+$list1: $first-color, $second-color;
+$rotated-dot: $dot-color-first, $dot-color-second;
+
+@mixin gradient-btn($direction, $list1) {
+  background: -webkit-linear-gradient($direction, $list1);
+  background: -moz-linear-gradient($direction, $list1);
+  background: -o-linear-gradient($direction, $list1);
+  background: linear-gradient($direction, $list1);
+}
+
+@mixin gradient-dot-gradient($direction, $rotated-dot) {
+  background: -webkit-linear-gradient($direction, $rotated-dot);
+  background: -moz-linear-gradient($direction, $rotated-dot);
+  background: -o-linear-gradient($direction, $rotated-dot);
+  background: linear-gradient($direction, $rotated-dot);
+}
